@@ -84,7 +84,7 @@
    */
   function aosInit() {
     AOS.init({
-      duration: 450,
+      duration: 600,
       easing: 'ease-in',
       once: false,
       mirror: false
@@ -172,10 +172,9 @@
         page.addEventListener('click', (e) => {
           e.preventDefault();
           window.scrollTo({ top: 0, behavior: 'smooth' });
-          
+
           const pages = page.getAttribute('data-page');
           pagination(pages);
-          console.log(pages);
         });
       }
     );
@@ -219,7 +218,17 @@
 
       window.addEventListener('load', () => {
         pagination('beranda');
+        window.scrollTo({ top: 0, behavior: 'smooth' });
       });
 
 })();
 
+// Preloader
+
+window.addEventListener('load', function() {
+  const preloader = document.querySelector('.preloader');
+  if (preloader) {
+    preloader.style.display = 'none';
+  }
+}
+);
