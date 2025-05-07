@@ -41,6 +41,10 @@
 
 <body class="index-page">
 
+  <div class="preloader">
+    <div class="loader"></div>
+  </div>
+
   <header id="header" class="header d-flex align-items-center sticky-top">
     <div class="container-fluid container-xl position-relative d-flex align-items-center">
 
@@ -57,7 +61,7 @@
           <li><a data-page="tentang" class="navItem .nav-tentang">Tentang</a></li>
           <li><a data-page="galeri" class="navItem .nav-galeri">Galeri</a></li>
           <li><a data-page="harapan" class="navItem .nav-harapan">Harapan</a></li>
-          <li><a data-page="scan" class="navItem .nav-scan">Scan</a></li>
+          <!-- <li><a data-page="scan" class="navItem .nav-scan">Scan</a></li> --!>
           <!-- <li><a href="#team">Team</a></li> -->
           <!-- <li><a href="blog.html">Blog</a></li>
           <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
@@ -88,7 +92,7 @@
   <main class="main">
 
     <!-- Hero Section -->
-    <section id="hero" class="hero section page-beranda">
+    <section id="hero" class="hero section page page-beranda">
 
       <img src="assets/img/hero-bg.jpg" alt="" data-aos="fade-in">
 
@@ -109,7 +113,7 @@
     </section><!-- /Hero Section -->
 
     <!-- Clients Section -->
-    <section id="clients" class="clients section page-beranda">
+    <section id="clients" class="clients section page page-beranda">
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
 
@@ -166,7 +170,7 @@
     </section><!-- /Clients Section -->
 
     <!-- About Section -->
-    <section id="about" class="about section section-bg dark-background page-beranda">
+    <section id="about" class="about section section-bg dark-background page page-beranda">
 
       <div class="container position-relative">
 
@@ -217,7 +221,7 @@
     </section><!-- /About Section -->
 
     <!-- Stats Section -->
-    <section id="stats" class="stats section page-beranda">
+    <section id="stats" class="stats section page page-beranda">
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
 
@@ -262,8 +266,8 @@
     </section><!-- /Stats Section -->
 
     <!-- Tabs Section -->
-    <section id="tabs" class="tabs section page-tentang">
-
+    <section id="tabs" class="tabs section page page-tentang">
+      
       <div class="container">
 
         <ul class="nav nav-tabs row  d-flex" data-aos="fade-up" data-aos-delay="100">
@@ -385,7 +389,7 @@
     </section><!-- /Tabs Section -->
 
     <!-- Services Section -->
-    <section id="services" class="services section section-bg dark-background page-tentang">
+    <section id="services" class="services section section-bg dark-background page page-tentang">
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
@@ -464,7 +468,7 @@
     </section><!-- /Services Section -->
 
     <!-- Portfolio Section -->
-    <section id="portfolio" class="portfolio section page-galeri">
+    <section id="portfolio" class="portfolio section page page-galeri">
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
@@ -490,10 +494,7 @@
               <div class="portfolio-content h-100">
                 <img src="assets/img/portfolio/app-1.jpg" class="img-fluid" alt="">
                 <div class="portfolio-info">
-                  <h4>App 1</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="assets/img/portfolio/app-1.jpg" title="App 1" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                  <a href="assets/img/portfolio/app-1.jpg" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                 </div>
               </div>
             </div><!-- End Portfolio Item -->
@@ -502,10 +503,7 @@
               <div class="portfolio-content h-100">
                 <img src="assets/img/portfolio/product-1.jpg" class="img-fluid" alt="">
                 <div class="portfolio-info">
-                  <h4>Product 1</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="assets/img/portfolio/product-1.jpg" title="Product 1" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                  <a href="assets/img/portfolio/product-1.jpg" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                 </div>
               </div>
             </div><!-- End Portfolio Item -->
@@ -514,22 +512,16 @@
               <div class="portfolio-content h-100">
                 <img src="assets/img/portfolio/branding-1.jpg" class="img-fluid" alt="">
                 <div class="portfolio-info">
-                  <h4>Branding 1</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="assets/img/portfolio/branding-1.jpg" title="Branding 1" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                  <a href="assets/img/portfolio/branding-1.jpg" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                 </div>
               </div>
             </div><!-- End Portfolio Item -->
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-books">
               <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/books-1.jpg" class="img-fluid" alt="">
+                <img src="assets/img/portfolio/books-1.png" class="img-fluid" alt="">
                 <div class="portfolio-info">
-                  <h4>Books 1</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="assets/img/portfolio/books-1.jpg" title="Branding 1" data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                  <a href="assets/img/portfolio/books-1.png"data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                 </div>
               </div>
             </div><!-- End Portfolio Item -->
@@ -538,10 +530,7 @@
               <div class="portfolio-content h-100">
                 <img src="assets/img/portfolio/app-2.jpg" class="img-fluid" alt="">
                 <div class="portfolio-info">
-                  <h4>App 2</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="assets/img/portfolio/app-2.jpg" title="App 2" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                  <a href="assets/img/portfolio/app-2.jpg" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                 </div>
               </div>
             </div><!-- End Portfolio Item -->
@@ -550,10 +539,7 @@
               <div class="portfolio-content h-100">
                 <img src="assets/img/portfolio/product-2.jpg" class="img-fluid" alt="">
                 <div class="portfolio-info">
-                  <h4>Product 2</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="assets/img/portfolio/product-2.jpg" title="Product 2" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                  <a href="assets/img/portfolio/product-2.jpg" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                 </div>
               </div>
             </div><!-- End Portfolio Item -->
@@ -562,22 +548,16 @@
               <div class="portfolio-content h-100">
                 <img src="assets/img/portfolio/branding-2.jpg" class="img-fluid" alt="">
                 <div class="portfolio-info">
-                  <h4>Branding 2</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="assets/img/portfolio/branding-2.jpg" title="Branding 2" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                  <a href="assets/img/portfolio/branding-2.jpg" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                 </div>
               </div>
             </div><!-- End Portfolio Item -->
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-books">
               <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/books-2.jpg" class="img-fluid" alt="">
+                <img src="assets/img/portfolio/books-2.png" class="img-fluid" alt="">
                 <div class="portfolio-info">
-                  <h4>Books 2</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="assets/img/portfolio/books-2.jpg" title="Branding 2" data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                  <a href="assets/img/portfolio/books-2.png" data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                 </div>
               </div>
             </div><!-- End Portfolio Item -->
@@ -586,10 +566,7 @@
               <div class="portfolio-content h-100">
                 <img src="assets/img/portfolio/app-3.jpg" class="img-fluid" alt="">
                 <div class="portfolio-info">
-                  <h4>App 3</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="assets/img/portfolio/app-3.jpg" title="App 3" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                  <a href="assets/img/portfolio/app-3.jpg" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                 </div>
               </div>
             </div><!-- End Portfolio Item -->
@@ -598,10 +575,7 @@
               <div class="portfolio-content h-100">
                 <img src="assets/img/portfolio/product-3.jpg" class="img-fluid" alt="">
                 <div class="portfolio-info">
-                  <h4>Product 3</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="assets/img/portfolio/product-3.jpg" title="Product 3" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                  <a href="assets/img/portfolio/product-3.jpg" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                 </div>
               </div>
             </div><!-- End Portfolio Item -->
@@ -610,22 +584,16 @@
               <div class="portfolio-content h-100">
                 <img src="assets/img/portfolio/branding-3.jpg" class="img-fluid" alt="">
                 <div class="portfolio-info">
-                  <h4>Branding 3</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="assets/img/portfolio/branding-3.jpg" title="Branding 2" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                  <a href="assets/img/portfolio/branding-3.jpg" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                 </div>
               </div>
             </div><!-- End Portfolio Item -->
 
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-books">
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-books"> 
               <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/books-3.jpg" class="img-fluid" alt="">
+                <img src="assets/img/portfolio/books-3.png" class="img-fluid" alt="">
                 <div class="portfolio-info">
-                  <h4>Books 3</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="assets/img/portfolio/books-3.jpg" title="Branding 3" data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                  <a href="assets/img/portfolio/books-3.png" data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                 </div>
               </div>
             </div><!-- End Portfolio Item -->
@@ -639,14 +607,14 @@
     </section><!-- /Portfolio Section -->
 
     <!-- Testimonials Section -->
-    <section id="testimonials" class="testimonials section page-beranda">
+    <section id="testimonials" class="testimonials section page hide">
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>Kata-Kata Pembimbing</h2>
         <p>Berikut adalah beberapa kata-kata dari pembimbing acara Drama Arena yang disampaikan kepada para peserta.</p>
       </div><!-- End Section Title -->
-      <div class="container section section-bg dark-background page-beranda" data-aos="fade-up" data-aos-delay="100">
+      <div class="container section section-bg dark-background page page-beranda" data-aos="fade-up" data-aos-delay="100">
 
         <div class="swiper init-swiper">
           <script type="application/json" class="swiper-config">
@@ -675,6 +643,20 @@
             }
           </script>
           <div class="swiper-wrapper">
+            
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="assets/img/team/team-1.jpg" class="testimonial-img" alt="">
+                <h3>Ust. DImas Bagus Satrio</h3>
+                <h4>Staf Pengasuhan Santri</h4>
+                
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+              </div>
+            </div><!-- End testimonial item -->
 
             <div class="swiper-slide">
               <div class="testimonial-item">
@@ -684,7 +666,7 @@
                 
                 <p>
                   <i class="bi bi-quote quote-icon-left"></i>
-                  <span>Pagelaran Seni Akbar Drama Arena 5100, malam kreativitas dan keindahan yang lahir dari bakat luar biasa para santri kelas 5 KMI dan bertujuan membentuk karakter yang berkualitas</span>
+                  <span>Pagelaran Seni Akbar Drama Arena 5100, malam kreativitas dan keindahan yang lahir dari bakat luar biasa para santri kelas 5 KMI dan bertujuan membentuk karakter yang berkualitas.</span>
                   <i class="bi bi-quote quote-icon-right"></i>
                 </p>
               </div>
@@ -698,7 +680,7 @@
                 
                 <p>
                   <i class="bi bi-quote quote-icon-left"></i>
-                  <span>Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.</span>
+                  <span>Kelas 5 itu tak lekang karena panas dan tak lapuk karena hujan.</span>
                   <i class="bi bi-quote quote-icon-right"></i>
                 </p>
               </div>
@@ -718,19 +700,6 @@
               </div>
             </div><!-- End testimonial item -->
 
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <img src="assets/img/team/team-1.jpg" class="testimonial-img" alt="">
-                <h3>Ust. DImas Bagus Satrio</h3>
-                <h4>Staf Pengasuhan Santri</h4>
-                
-                <p>
-                  <i class="bi bi-quote quote-icon-left"></i>
-                  <span>Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.</span>
-                  <i class="bi bi-quote quote-icon-right"></i>
-                </p>
-              </div>
-            </div><!-- End testimonial item -->
 
             <div class="swiper-slide">
               <div class="testimonial-item">
@@ -819,7 +788,7 @@
     </section><!-- /Pricing Section -->
 
     <!-- Faq Section -->
-    <section id="faq" class="faq section page-beranda">
+    <section id="faq" class="faq section page page-beranda">
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
@@ -917,7 +886,7 @@
     </section><!-- /Faq Section -->
 
     <!-- Team Section -->
-    <section id="team" class="team section section-bg dark-background page-tentang">
+    <section id="team" class="team section section-bg dark-background page page-tentang">
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
@@ -933,9 +902,6 @@
             <div class="team-member">
               <div class="member-img">
                 <img src="assets/img/team/team-1.jpg" class="img-fluid" alt="">
-                <div class="social">
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                </div>
               </div>
               <div class="member-info">
                 <h4>Ust. Dimas Bagus Satrio</h4>
@@ -948,9 +914,6 @@
             <div class="team-member">
               <div class="member-img">
                 <img src="assets/img/team/team-2.jpg" class="img-fluid" alt="">
-                <div class="social">
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                </div>
               </div>
               <div class="member-info">
                 <h4>Ust. Rafif Maulana Putra</h4>
@@ -963,9 +926,6 @@
             <div class="team-member">
               <div class="member-img">
                 <img src="assets/img/team/team-3.jpg" class="img-fluid" alt="">
-                <div class="social">
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                </div>
               </div>
               <div class="member-info">
                 <h4>Ust. Wafa' Dinul Haq</h4>
@@ -978,9 +938,6 @@
             <div class="team-member">
               <div class="member-img">
                 <img src="assets/img/team/team-4.jpg" class="img-fluid" alt="">
-                <div class="social">
-                  <a href="https://www.instagram.com/shidqijtw95/"><i class="bi bi-instagram"></i></a>
-                </div>
               </div>
               <div class="member-info">
                 <h4>Ust. Muhammad Shidqi Masyail </h4>
@@ -996,7 +953,7 @@
     </section><!-- /Team Section -->
 
     <!-- acara Section -->
-    <section id="acara" class="faq section page-tentang acara">
+    <section id="acara" class="faq section page hide acara">
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
@@ -1024,42 +981,42 @@
                 <h3>Susunan Acara</h3>
                 <div class="faq-content">
                   <p>
-                        <br><a href="#">1. Visual Protokol</a>
-                        <br><a href="assets/pdf/GuideBookGeladi2.pdf#toolbar=0&page=8">2. Hadroh</a>
-                        <br><a href="assets/pdf/GuideBookGeladi2.pdf#toolbar=0&page=9">3. Mc</a>
-                        <br><a href="assets/pdf/GuideBookGeladi2.pdf#toolbar=0&page=10">4. Qori</a>
-                        <br><a href="assets/pdf/GuideBookGeladi2.pdf#toolbar=0&page=11">5. Mc</a>
-                        <br><a href="assets/pdf/GuideBookGeladi2.pdf#toolbar=0&page=12">6. Sambutan ketua</a>
-                        <br><a href="assets/pdf/GuideBookGeladi2.pdf#toolbar=0&page=13">7. Mc</a>
-                        <br><a href="assets/pdf/GuideBookGeladi2.pdf#toolbar=0&page=14">8. Sambutan bapak pimpinan</a>
-                        <br><a href="assets/pdf/GuideBookGeladi2.pdf#toolbar=0&page=15">9. Bumper</a>
-                        <br><a href="assets/pdf/GuideBookGeladi2.pdf#toolbar=0&page=16">10. Grand Opening (OST band)</a>
-                        <br><a href="assets/pdf/GuideBookGeladi2.pdf#toolbar=0&page=17">11. Bumper</a>
-                        <br><a href="assets/pdf/GuideBookGeladi2.pdf#toolbar=0&page=18">12. Choir</a>
-                        <br><a href="assets/pdf/GuideBookGeladi2.pdf#toolbar=0&page=19">13. Drama Act 1</a>
-                        <br><a href="assets/pdf/GuideBookGeladi2.pdf#toolbar=0&page=20">14. Tari Aceh</a>
-                        <br><a href="assets/pdf/GuideBookGeladi2.pdf#toolbar=0&page=21">15. Voice Of Truth</a>
-                        <br><a href="assets/pdf/GuideBookGeladi2.pdf#toolbar=0&page=22">16. Narator</a>
-                        <br><a href="assets/pdf/GuideBookGeladi2.pdf#toolbar=0&page=23">17. Drama act 2.1</a>
-                        <br><a href="assets/pdf/GuideBookGeladi2.pdf#toolbar=0&page=24">18. Puisi</a>
-                        <br><a href="assets/pdf/GuideBookGeladi2.pdf#toolbar=0&page=25">19. Drama act 2.2</a>
-                        <br><a href="assets/pdf/GuideBookGeladi2.pdf#toolbar=0&page=26">20. Band (jangan remehkan)</a>
-                        <br><a href="assets/pdf/GuideBookGeladi2.pdf#toolbar=0&page=27">21. Rising of Sumatra</a>
-                        <br><a href="assets/pdf/GuideBookGeladi2.pdf#toolbar=0&page=28">22. Anak Rantau collaboration</a>
-                        <br><a href="assets/pdf/GuideBookGeladi2.pdf#toolbar=0&page=29">23. Sunda culture</a>
-                        <br><a href="assets/pdf/GuideBookGeladi2.pdf#toolbar=0&page=30">24. Wiroyudho</a>
-                        <br><a href="assets/pdf/GuideBookGeladi2.pdf#toolbar=0&page=31">25. Satrio kencono</a>
-                        <br><a href="assets/pdf/GuideBookGeladi2.pdf#toolbar=0&page=32">26. Tari kaka main salah</a>
-                        <br><a href="assets/pdf/GuideBookGeladi2.pdf#toolbar=0&page=33">27. Visual Cerdikiawan</a>
-                        <br><a href="assets/pdf/GuideBookGeladi2.pdf#toolbar=0&page=34">28. Drama act 3</a>
-                        <br><a href="assets/pdf/GuideBookGeladi2.pdf#toolbar=0&page=35">29. Hunza balistani</a>
-                        <br><a href="assets/pdf/GuideBookGeladi2.pdf#toolbar=0&page=36">30. Remime</a>
-                        <br><a href="assets/pdf/GuideBookGeladi2.pdf#toolbar=0&page=37">31. Arabian style</a>
-                        <br><a href="assets/pdf/GuideBookGeladi2.pdf#toolbar=0&page=38">32. Five mytichal</a>
-                        <br><a href="assets/pdf/GuideBookGeladi2.pdf#toolbar=0&page=39">33. Slavic style</a>
-                        <br><a href="assets/pdf/GuideBookGeladi2.pdf#toolbar=0&page=40">34. Hyper no Shibuya</a>
-                        <br><a href="assets/pdf/GuideBookGeladi2.pdf#toolbar=0&page=41">35. Dan doet</a>
-                        <br><a href="assets/pdf/GuideBookGeladi2.pdf#toolbar=0&page=42">36. Grand Closing</a>
+                        <br>1. Visual Protokol
+                        <br>2. Hadroh
+                        <br>3. Mc
+                        <br>4. Qori
+                        <br>5. Mc
+                        <br>6. Sambutan ketua
+                        <br>7. Mc
+                        <br>8. Sambutan bapak pimpinan
+                        <br>9. Bumper
+                        <br>10. Grand Opening (OST band)
+                        <br>11. Bumper
+                        <br>12. Choir
+                        <br>13. Drama Act 1
+                        <br>14. Tari Aceh
+                        <br>15. Voice Of Truth
+                        <br>16. Narator
+                        <br>17. Drama act 2.1
+                        <br>18. Puisi
+                        <br>19. Drama act 2.2
+                        <br>20. Band (jangan remehkan)
+                        <br>21. Rising of Sumatra
+                        <br>22. Anak Rantau collaboration
+                        <br>23. Sunda culture
+                        <br>24. Wiroyudho
+                        <br>25. Satrio kencono
+                        <br>26. Tari kaka main salah
+                        <br>27. Visual Cerdikiawan
+                        <br>28. Drama act 3
+                        <br>29. Hunza balistani
+                        <br>30. Remime
+                        <br>31. Arabian style
+                        <br>32. Five mytichal
+                        <br>33. Slavic style
+                        <br>34. Hyper no Shibuya
+                        <br>35. Dan doet
+                        <br>36. Grand Closing
                   </p>
                 </div>
                 <i class="faq-toggle bi bi-chevron-right"></i>
@@ -1069,32 +1026,24 @@
                 <h3>Guide Book</h3>
                 <div class="faq-content guidebook">
                   <p>
-                    <embed
-                      type="application/pdf"
-                      id="guidebook" 
-                      width="800px"
-                      height="600px" 
-                      src="assets/pdf/GuideBookGeladi2.pdf#toolbar=0"
-                      allowfullscreen
-                      frameborder="0"> 
-                  </embed>
-                  <a href="assets/pdf/GuideBookGeladi2.zip" target="_blank" download="GuideBook.pdf">Download Here</a>
+                    <iframe src="https://drive.google.com/file/d/1NecatQGfkVcoTiwoWBFomsTi3B3CdZzL/preview" width="800px" height="650px" allow="autoplay" class="guidebook" allowfullscreen></iframe>
+                  <a href="https://drive.google.com/file/d/1NecatQGfkVcoTiwoWBFomsTi3B3CdZzL/view?usp=drive_link">See Here</a>
                   </p>
                 </div>
                 <i class="faq-toggle bi bi-chevron-right"></i>
               </div><!-- End Faq item-->
 
               <div class="faq-item">
-                <h3>Kriteria Penilaian</h3>
+                <h3>Nama-Nama Juri</h3>
                 <div class="faq-content">
-                  <p>- Tari Saman 
-                    <br>- Tari Campur Sari
-                    <br>- Tari Malulo
-                    <br>- Tari Zapin
-                    <br>- Tari India
-                    <br>- Tari Modern
-                    <br>- Tari Timur
-                    <br>- Tari Dayak
+                  <p>- Al-Ustadz Fiarka Subangani, Lc.
+                    <br>- Al-Ustadz Mohammad Naufal Ash-shodiqi
+                    <br>- Al-Ustadz H. Husni Dzahaby, Lc.
+                    <br>- Al-Ustadz Muhammad Emerald Atthala
+                    <br>- Al-Ustadz Syaifulloh Muhyidin, S.Ag.
+                    <br>- Al-Ustadz Muhammad Haidar Al-Wa'ie
+                    <br>- Al-Ustadz Diaz Mohammad Idhar, S.I.Kom
+                    <br>- Al-Ustadz Muhammad Raghib Musyafa
                   </p>
                 </div>
                 <i class="faq-toggle bi bi-chevron-right"></i>
@@ -1119,7 +1068,7 @@
     </section><!-- /Faq Section -->
 
     <!-- Contact Section -->
-    <section id="contact" class="contact section page-harapan">
+    <section id="contact" class="contact section page page-harapan">
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
@@ -1305,7 +1254,8 @@
       <li data-page="tentang" class="navItem .nav-tentang"><i data-feather="info"></i>Tentang</li>
       <li data-page="galeri" class="navItem .nav-galeri"><i data-feather="image"></i>Galeri</li>
       <li data-page="harapan" class="navItem .nav-harapan"><i data-feather="message-square"></i>Harapan</li>
-      <li class="navItem .nav-scan"><i data-feather="camera"></i>Scan</li>
+	<!-- <li class="navItem .nav-scan"><i data-feather="camera"></i>Scan</li> --!>
+      
     </ul>
   
   <!-- Scroll Top -->
